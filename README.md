@@ -168,11 +168,6 @@ python ml/train.py
 3. Run the backend
 python app.py
 
-
-Backend starts at:
-
-http://127.0.0.1:5000
-
 4. Run the frontend
 
 Just open:
