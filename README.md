@@ -1,112 +1,87 @@
-🎓 Student Placement Predictor & Resume Analyzer
+#  Student Placement Predictor & Resume Analyzer
 
-An end-to-end Machine Learning + Flask project that predicts a student’s placement probability and analyzes their resume to recommend missing skills and courses.
+An end-to-end **Machine Learning + Flask** project that predicts a student’s placement probability and analyzes their resume to recommend missing skills and courses.
 
 This project helps students understand:
+- Their chances of getting placed  
+- What skills they lack  
+- What they should improve  
+- Resume-based improvement suggestions  
 
-Their chances of getting placed
+---
 
-What skills they lack
+##  Features
 
-What they should improve
+### **1. Placement Prediction (ML Model)**
+Uses Random Forest classifier to predict placement likelihood based on:
 
-Resume-based improvement suggestions
-
-⭐ Features
-1. Placement Prediction (ML Model)
-
-Uses a Random Forest classifier to predict placement likelihood based on:
-
-CGPA
-
-Technical Skills
-
-Soft Skills
-
-Internships
-
-Projects
-
-Backlogs
-
-12th Percentage
-
-Branch
+- CGPA  
+- Technical Skills  
+- Soft Skills  
+- Internships  
+- Projects  
+- Backlogs  
+- 12th Percentage  
+- Branch  
 
 Returns:
+- Placement probability (0–100%)  
+- Final decision label  
+- Personalized suggestions  
 
-Placement probability (0–100%)
+---
 
-Final decision label
-
-Personalized suggestions
-
-2. Resume Analysis (PDF/DOCX)
+###  **2. Resume Analysis (PDF/DOCX)**
 
 Uploads a resume → Extracts text → Analyzes skills.
 
 Finds:
-
-Skills present
-
-Missing skills
-
-Recommended courses
-
-Summary
+- Skills present  
+- Missing skills  
+- Recommended courses  
+- Important summary  
 
 Technologies used:
+- PyPDF2  
+- python-docx  
+- NLP-based keyword matching  
 
-PyPDF2
+---
 
-python-docx
+###  **3. Skill-Based Suggestions Engine**
+A rule-based recommendation system that suggests improvements like:
+- Coding practice  
+- Soft skill improvement  
+- Doing internships  
+- Building projects  
+- Branch-specific advice  
 
-NLP keyword matching
+---
 
-3. Skill-Based Suggestions Engine
+## Tech Stack
 
-Rule-based system suggesting improvements like:
+### **Backend**
+- Python  
+- Flask  
+- Flask-CORS  
+- Joblib  
+- Pandas  
 
-Coding practice
+### **Machine Learning**
+- Random Forest Classifier  
+- Scikit-Learn  
+- OneHotEncoding (branch)  
+- Custom preprocessing pipeline  
 
-Soft skill improvement
+### **Resume Processing**
+- PyPDF2  
+- python-docx  
+- Regex / Keyword Matching  
 
-Internships
+---
 
-Academic improvement
+## Project Structure
 
-Branch-specific guidance
-
-🛠 Tech Stack
-Backend
-
-Python
-
-Flask
-
-Flask-CORS
-
-Pandas
-
-Joblib
-
-Machine Learning
-
-Random Forest Classifier
-
-Scikit-Learn
-
-OneHotEncoder
-
-ML Pipeline
-
-Resume Processing
-
-PyPDF2
-
-python-docx
-
-📁 Project Structure
 placement-predictor/
 │
 ├── backend/                                  # Flask backend (API + ML)
@@ -138,9 +113,11 @@ placement-predictor/
 │
 ├── README.md                                  # Project documentation
 └── .gitignore                                 # Ignore venv, cache, pyc files
+---
 
-🔌 API Endpoints
-1️⃣ Placement Prediction
+## API Endpoints
+
+### 1️. **Placement Prediction**
 
 POST /api/predict
 
@@ -163,7 +140,7 @@ Response:
   "suggestions": ["...", "..."]
 }
 
-2️⃣ Resume Analyzer
+### 2️. **Resume Analyzer**
 
 POST /api/analyze_resume
 
@@ -180,8 +157,8 @@ Example Response:
   "recommendations": ["SQL for Data Science", "Machine Learning by Andrew Ng"],
   "summary": "Found 2 relevant skills. Suggested 2 learning items."
 }
-
-🚀 How to Run Locally
+ 
+## How to Run Locally
 1. Install dependencies
 pip install -r requirements.txt
 
@@ -202,12 +179,12 @@ Just open:
 
 frontend/index.html
 
-🖼 Screenshots
+## Screenshots
 
 Your screenshot folder:
 https://github.com/Janhavi-gayakwad/python-project/tree/main/placement%20predictor/screenshot
 
-📎 GitHub Repository
+## GitHub Repository
 
 Student Placement Predictor:
 https://github.com/Janhavi-gayakwad/python-project/tree/main/placement%20predictor
