@@ -140,7 +140,7 @@ Response:
   "label": "You have a good chance of being placed",
   "suggestions": [...]
 }
-### 2.Resume Analyzer
+### 2.resume analyzer**
 POST /api/analyze_resume
 
 
@@ -155,6 +155,7 @@ Response:
   "recommendations": [...],
   "summary": "Found 5 relevant skills..."
 }
+---
 
 ## How to Run Locally
 1. Install dependencies
