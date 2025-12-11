@@ -169,6 +169,8 @@ http://127.0.0.1:5000
 ---
 
 ## 🖼 Screenshots
+https://github.com/Janhavi-gayakwad/python-project/tree/main/placement%20predictor/screenshot
 
-
+## 📎 GitHub Repository
+[student placement predictor](https://github.com/Janhavi-gayakwad/python-project/tree/main/placement%20predictor)
 
