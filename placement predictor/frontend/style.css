@@ -1,0 +1,110 @@
+/* ====== Base Setup ====== */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #eaf4ff; /* Light blue background */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 2rem;
+}
+
+/* ====== Container ====== */
+.container {
+  width: 150%;
+  max-width: 600px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #222;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ====== Form Card ====== */
+.card {
+  margin-bottom: 2rem;
+}
+
+.card h2 {
+  text-align: center;
+  color: #0d6efd;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ====== Inputs ====== */
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: #333;
+  font-weight: 500;
+}
+
+input[type="number"],
+select,
+input[type="file"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  background-color: #f8f9fa;
+  font-size: 1rem;
+  color: #212529;
+  transition: border-color 0.2s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #0d6efd;
+  outline: none;
+  background-color: #e9f2ff;
+}
+
+/* ====== Button ====== */
+button {
+  width: 100%;
+  background-color: #0d6efd;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0b5ed7;
+}
+
+/* ====== Result Box ====== */
+.result-text {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1rem;
+  color: #0d6efd;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  min-height: 40px;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+}
